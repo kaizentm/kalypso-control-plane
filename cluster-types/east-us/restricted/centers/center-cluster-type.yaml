@@ -5,6 +5,7 @@ metadata:
   labels: 
     region: east-us
     restricted: "true"
+    edge: "false"
 spec:
   reconciler: arc-flux
   namespaceService: default
