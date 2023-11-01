@@ -4,7 +4,7 @@ metadata:
   name: uat-test-policy
 spec:
   deploymentTargetSelector:
-    workspace: kaizen-app-team
+    workspace: kaizentm
     labelSelector:
       matchLabels:
         purpose: uat-test
