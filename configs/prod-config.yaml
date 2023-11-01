@@ -5,5 +5,5 @@ metadata:
   labels:
      platform-config: "true"
 data:
-  ENVIRONMENT: stage
+  ENVIRONMENT: prod
   SOME_COMMON_ENVIRONMENT_VARIABLE: "false"

@@ -7,6 +7,9 @@ spec:
     workspace: kaizentm
     labelSelector:
       matchLabels:
-        purpose: uat-test
+        purpose: edge
   clusterTypeSelector:
-    labelSelector: {}
+    labelSelector:
+          matchLabels:
+            restricted: "true"
+            edge: "true"
