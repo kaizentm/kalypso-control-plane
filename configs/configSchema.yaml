@@ -1,0 +1,27 @@
+apiVersion: scheduler.kalypso.io/v1alpha1
+kind: ConfigSchema
+metadata:
+  name: platform-config-schema
+spec:
+  schema: |
+    {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Platform Config Schema",
+      "description": "Schema for platform config",
+      "type": "object",
+      "properties": {
+        "factoryName": {
+          "type": "string",
+          "description": "Factory Name"
+        },
+        "factoryID": {
+          "type": "integer",
+          "description": "Factory ID"
+          "exclusiveMinimum": 0
+        },
+        "required": [
+          "factoryName",
+          "factoryID"
+        ]        
+      }
+    }
